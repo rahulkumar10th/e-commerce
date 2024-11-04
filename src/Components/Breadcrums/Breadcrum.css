@@ -1,0 +1,29 @@
+/* Breadcrum container */
+.breadcrum {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    font-size: 16px; /* Font size for breadcrumb text */
+    color: #333; /* Color for breadcrumb text */
+    padding: 10px 20px; /* Padding around the breadcrumb */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Light border around the breadcrumb */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Arrow icon styling */
+.breadcrum img {
+    margin: 0 5px; /* Margin for spacing around arrow icons */
+    height: 12px; /* Fixed height for the arrow icon */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Optional hover effect for breadcrumb items */
+.breadcrum span:hover {
+    text-decoration: underline; /* Underline text on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Last item in breadcrumb should not have arrow */
+.breadcrum > :last-child {
+    margin-right: 0; /* Remove margin from the last child */
+}

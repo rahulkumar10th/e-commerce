@@ -1,0 +1,59 @@
+
+/* Main container for the description box */
+.descriptionbox {
+    background-color: #fff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px 0; /* Margin for spacing between elements */
+}
+
+/* Navigator section styling */
+.descriptionbox-navigator {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between items */
+    border-bottom: 2px solid #f0f0f0; /* Bottom border for separation */
+    padding-bottom: 10px; /* Padding below the navigator */
+    margin-bottom: 15px; /* Margin below the navigator */
+}
+
+/* Individual navigation box styling */
+.descriptionbox-nav-box {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 15px; /* Padding for the navigation boxes */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+/* Change background on hover */
+.descriptionbox-nav-box:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Description text styling */
+.descriptionbox-description {
+    font-size: 16px; /* Font size for readability */
+    color: #555; /* Dark gray color for the text */
+    line-height: 1.6; /* Line height for better spacing */
+}
+
+/* Paragraph styling within the description */
+.descriptionbox-description p {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Add padding above and below */
+    text-align: justify; /* Justify text for a clean look */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    color: darkslategrey
+}
+
+/* Optional media query for responsiveness */
+@media (max-width: 768px) {
+    .descriptionbox {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}

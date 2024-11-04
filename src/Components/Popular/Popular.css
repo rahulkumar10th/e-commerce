@@ -1,0 +1,24 @@
+.popular {
+    text-align: center; /* Centers the heading and other inline content */
+    padding: 20px;
+  }
+  
+  .popular-item {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Vertically centers the items */
+    flex-wrap: nowrap; /* Prevents items from wrapping into multiple rows */
+    overflow-x: auto; /* Adds horizontal scroll if items overflow */
+    gap: 20px; /* Adds space between the items */
+    padding: 0 10px; /* Adds space on the left and right sides */
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    margin: 10px auto; /* Centers the horizontal rule */
+    width: 50%; /* Adjust width as needed */
+  }
+  

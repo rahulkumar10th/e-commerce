@@ -1,0 +1,139 @@
+.shop-category {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .shopcategory-banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .shopcategory-indexsort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .shopcategory-indexsort p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .shopcategory-sort {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .shopcategory-sort img {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+  }
+  
+  .shopcategory-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin-top: 20px;
+    padding: 0 20px; /* Adds space on both left and right sides */
+  }
+  
+  .shopcategory-product > div {
+    flex: 1 1 calc(25% - 20px); /* 4 products per row, with spacing */
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .shopcategory-product > div:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shopcategory-product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .shopcategory-product > div {
+      flex: 1 1 calc(33.333% - 20px); /* 3 products per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .shopcategory-product > div {
+      flex: 1 1 calc(50% - 20px); /* 2 products per row on smaller screens */
+    }
+  
+    .shopcategory-banner {
+      max-height: 250px;
+    }
+  
+    .shopcategory-indexsort {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .shopcategory-sort {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shopcategory-product > div {
+      flex: 1 1 100%; /* 1 product per row on extra small screens */
+    }
+  }
+  
+  /* css property for explore more */
+  .shopcategory-loadmore {
+    display: inline-block;
+    background-color: #ff5722; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 12px 25px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 20px 0; /* Margin for spacing above and below */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .shopcategory-loadmore:hover {
+    background-color: #e64a19; /* Darker color on hover */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .shopcategory-loadmore:active {
+    background-color: #d84315; /* Slightly darker when clicked */
+    transform: scale(0.98); /* Slight shrink effect on click */
+  }
+  
+  .shopcategory-loadmore:focus {
+    outline: none; /* Remove outline when focused */
+  }
+  
